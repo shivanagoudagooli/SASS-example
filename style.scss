@@ -1,0 +1,21 @@
+$body_color : red;
+$text_color : "blue";
+
+@mixin text {
+    font-size: 25px;
+    font-weight:bold;
+    text-align: center;
+
+}
+body{
+    .addcolor{
+        p{
+            color: blue;
+        }
+        @include text;
+        color:$body_color;
+    }
+    .addcolor1{
+        @include text;
+    }
+}
